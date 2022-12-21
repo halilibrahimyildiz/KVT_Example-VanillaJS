@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+div.table-container h2,
+div.result-container h2 {
+    text-align: center;
+    color: #198754;
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 1.5px 1.5px rgba(25, 135, 84, 0);
+    transition: text-shadow 500ms;
+}
+
+div.table-container h2:hover,
+h2.result-article:hover {
+    text-shadow: 1.5px 1.5px rgba(25, 135, 84, 0.4);
+    transition: text-shadow 500ms;
+}
+
+div.table-container {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    align-items: center;
+    padding: 30px;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+    transform: rotateX(600px);
+    background-color: #fff;
+}
+
+table#calc-table {
+    font-size: small;
+    width: var(100%-500px);
+    min-width: 80vh;
+    border: 1px solid rgba(0, 0, 0, 0.3) !important;
+    background: #fff;
+    box-shadow: 2px 2px 2px 2px rgba(25, 135, 84, 0);
+    transition: box-shadow 500ms;
+}
+
+table#calc-table:hover,
+table#calc-table:focus {
+    transition: box-shadow 500ms;
+    box-shadow: 2px 2px 2px 2px rgba(25, 135, 84, 0.5);
+}
+
+input.table-input {
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 3px;
+    width: 6rem;
+    text-align: center;
+    height: 50px;
+}
+
+input.full-input {
+    width: 100%;
+    margin: 0;
+    min-width: 90px;
+    outline: none;
+}
+
+input.row-input {
+    min-width: 150px;
+    max-width: 200px;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+
+input#col-input {
+    min-width: 150px;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+input#data-input {
+    font-weight: normal;
+}
+
+table th.main-th {
+    text-align: center;
+    vertical-align: middle
+}
+
+th div.methods {
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgba(25, 135, 84, 1);
+    cursor: pointer;
+    transition: transform 350ms, opacity 350ms;
+    /* transition: all 300ms; */
+}
+
+th div.methods:hover {
+    transform: scale(1.2);
+    transition: all 300ms;
+    color: rgba(25, 135, 84, 0, 7);
+}
+
+.table-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button.calc-table {
+    margin: 8px;
+    width: 33%;
+    max-width: 600px;
+    height: 75px;
+    justify-self: center;
+    align-items: center;
+}

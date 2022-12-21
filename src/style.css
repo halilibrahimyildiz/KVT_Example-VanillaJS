@@ -1,0 +1,303 @@
+@import "./table.css";
+@import "./result.css";
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url("./img/white-clean-hexagonal-medical-concept_1017-29801.webp");
+}
+
+nav.nav {
+    padding: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    z-index: 1;
+    /*En üstte*/
+}
+
+nav.nav h1 {
+    /* margin: 0 auto; */
+    color: #198754;
+    text-shadow: 1px 1px rgba(25, 135, 84, 0);
+    transition: text-shadow 500ms;
+}
+
+nav.nav h1:hover,
+nav.nav h1:focus {
+    text-shadow: 1.2px 1px rgba(25, 135, 84, 0.4);
+    transition: text-shadow 500ms;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 33vh;
+}
+
+div.form-container {
+    background-color: #fff;
+    width: 45vh;
+    height: auto;
+    padding: 10px;
+    margin-top: 85px;
+    margin-bottom: 85px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+div.form-container div#select-nt-state {
+    margin-top: 30px
+}
+
+form#list {
+    margin-left: 15px;
+    margin-right: 15px;
+    height: auto;
+}
+
+select.st-select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 15px;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+input.form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 15px;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+select {
+    cursor: pointer;
+}
+
+input#alt-number,
+input#alt-number,
+input#natural-number,
+input#natural-number,
+select.nt-select,
+select.nt-select {
+    outline: 5px solid rgba(25, 135, 84, 0);
+    transition: outline 100ms;
+    margin-bottom: 8px;
+}
+
+input#alt-number:focus,
+input#natural-number:focus,
+select.nt-select:focus,
+input#alt-number:hover,
+input#natural-number:hover,
+select.nt-select:hover {
+    outline: 5px solid rgba(25, 135, 84, 0.2);
+    transition: outline 100ms;
+}
+
+label.input-label {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    transform: translateY(12px) translateX(2px);
+    background: #fff;
+    color: #198754;
+}
+
+button.btn-success#nt-number {
+    margin-top: 5px;
+    float: end;
+    min-height: 45px;
+}
+
+button#calc-1 {
+    margin-right: 15px;
+    margin-top: 20px;
+    min-height: 45px;
+    min-width: 150px;
+}
+
+hr {
+    color: #198754;
+}
+
+div.button-1 {
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+}
+
+
+/*Hurwics Range Style*/
+
+div.hurwics {
+    height: 120px;
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    outline: 5px solid rgba(25, 135, 84, 0);
+    transition: outline 100ms;
+}
+
+div.hurwics:hover,
+div.hurwics:focus {
+    outline: 5px solid rgba(25, 135, 84, 0.2);
+    transition: outline 100ms;
+}
+
+div.hurwics label.form-label {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    transform: translateY(-26px) translateX(-3px);
+    background: #fff;
+    color: green;
+    width: fit-content;
+    margin-left: 0px;
+}
+
+div.hurwics input#form-range {
+    background: green;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    width: 100%;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    outline: none;
+    transition: background 450ms ease-in;
+    accent-color: rgba(25, 135, 84, 1);
+    cursor: pointer;
+}
+
+div.hurwics input.hurwics-value {
+    font-size: 19px;
+    font-weight: 550;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    padding: 1px;
+    max-width: 60px;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    left: 41%;
+    outline: none;
+    text-decoration: underline 6px rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+}
+
+div.hurwics input.hurwics-value:hover,
+div.hurwics input.hurwics-value:focus {
+    text-decoration-color: rgba(25, 135, 84, 0.8);
+}
+
+button.btn.btn-success:hover {
+    background: #fff;
+    color: #198754;
+    transition: all 450ms;
+}
+
+button.btn.btn-success {
+    transition: all 450ms;
+    font-size: 18px;
+}
+
+
+/*Loading Animation*/
+
+span.loader {
+    width: 100px;
+    height: 100px;
+    border: 10px dotted #198754;
+    border-style: solid solid dotted dotted;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 48%;
+    bottom: 50%;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+    opacity: 1;
+}
+
+span.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 6px dotted #333;
+    border-style: solid solid dotted;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    animation: rotationBack 1s linear infinite;
+    transform-origin: center center;
+}
+
+
+/*Animations   */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
